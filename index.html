@@ -102,6 +102,8 @@ body::before {
 .link.instagram:hover .icon i { color: #e1306c; }
 .link.tiktok:hover { background: rgba(0, 0, 0, 0.15); color: #000000; }
 .link.tiktok:hover .icon i { color: #000000; }
+.link.phone:hover { background: rgba(40, 167, 69, 0.25); color: #28a745; }
+.link.phone:hover .icon i { color: #28a745; }
 
   footer.footer{margin-top:28px;color:rgba(0, 0, 0, 0.85);font-size:9px}
   footer.footer a{color:inherit;text-decoration:underline}
@@ -129,6 +131,7 @@ body::before {
 .social-icons a.facebook:hover { color: #1877f2; }
 .social-icons a.instagram:hover { color: #e1306c; }
 .social-icons a.tiktok:hover { color: #000000; }
+.social-icons a.phone:hover { color: #28a745; }
 
   @media(max-width:420px){
     .wrap{ padding-bottom:40px; padding-top:40px; max-width: 92%; padding-left: 20px; padding-right: 20px; zoom: 0.85; }
@@ -242,6 +245,18 @@ h1 {
           <span class="label" id="btn-review">Google Review</span>
       </a>
 
+      <!-- زر الاتصال الأول -->
+      <a class="link phone" href="tel:01092168284">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <span class="label" id="btn-phone1">Contact Us</span>
+      </a>
+
+      <!-- زر الاتصال الثاني -->
+      <a class="link phone" href="tel:01200822684">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <span class="label" id="btn-phone2">Contact Us</span>
+      </a>
+
       <a class="link facebook" href="https://www.facebook.com/share/1EVUjpoVvc/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
         <div class="icon"><i class="fab fa-facebook-f"></i></div>
         <span class="label" id="btn-fb">Facebook</span>
@@ -263,6 +278,7 @@ h1 {
         <a href="#" target="_blank" class="website" title="Website"><i class="fas fa-globe"></i></a>
         <a href="https://maps.app.goo.gl/LiVUeRxGngYaUpKz5" target="_blank" class="location" title="Location"><i class="fas fa-location-dot"></i></a>
         <a href="https://search.google.com/local/writereview?placeid=ChIJ9TEoZs6HUhQRUSRrNLBIhLU" target="_blank" class="review" title="Review"><i class="fas fa-star"></i></a>
+        <a href="tel:01092168284" class="phone" title="Call"><i class="fas fa-phone"></i></a>
         <a href="https://www.facebook.com/share/1EVUjpoVvc/?mibextid=wwXIfr" target="_blank" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/dr.oliviamedhat?srtk=bjU2MXlxdjFsMGM1&utm_source=qr" target="_blank" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@dr_olivia.medhat?_r=1&_t=ZS-9Ad9DuOtnrI" target="_blank" class="tiktok" title="TikTok"><i class="fab fa-tiktok"></i></a>
@@ -280,31 +296,31 @@ const translations = {
         title: "Ollie Dental Clinic", 
         tagline: "Make Happiness A Habit", 
         desc: "Advanced Dental Care & Smile Design",
-        web: "Website", loc: "Our Location", review: "Google Review", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
+        web: "Website", loc: "Our Location", review: "Google Review", phone: "Contact Us", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
     },
     ar: {
         title: "عيادة أولي للأسنان", 
         tagline: "اجعل السعادة عادة", 
         desc: "رعاية أسنان متقدمة وتصميم ابتسامة",
-        web: "الموقع الإلكتروني", loc: "موقع العيادة", review: "تقييم العيادة على جوجل", facebook: "فيسبوك", instagram: "انستجرام", tiktok: "تيك توك", dir: "rtl"
+        web: "الموقع الإلكتروني", loc: "موقع العيادة", review: "تقييم العيادة على جوجل", phone: "تواصل معنا", facebook: "فيسبوك", instagram: "انستجرام", tiktok: "تيك توك", dir: "rtl"
     },
     de: {
         title: "Ollie Dental Clinic", 
         tagline: "Mache Glück Zur Gewohnheit", 
         desc: "Fortschrittliche Zahnpflege & Lächeln-Design",
-        web: "Webseite", loc: "Unser Standort", review: "Google Bewertung", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
+        web: "Webseite", loc: "Unser Standort", review: "Google Bewertung", phone: "Kontaktiere uns", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
     },
     fr: {
         title: "Ollie Dental Clinic", 
         tagline: "Faites Du Bonheur Une Habitude", 
         desc: "Soins dentaires avancés et design du sourire",
-        web: "Site Web", loc: "Notre Emplacement", review: "Avis Google", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
+        web: "Site Web", loc: "Notre Emplacement", review: "Avis Google", phone: "Contactez-nous", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
     },
     ru: {
         title: "Ollie Dental Clinic", 
         tagline: "Сделай Счастье Привычкой", 
         desc: "Передовой уход за зубами и дизайн улыбки",
-        web: "Веб-сайт", loc: "Наш адрес", review: "Отзывы в Google", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
+        web: "Веб-сайт", loc: "Наш адрес", review: "Отзывы в Google", phone: "Связаться с нами", facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", dir: "ltr"
     }
 };
 
@@ -316,6 +332,8 @@ function setLang(lang) {
     document.getElementById('btn-web').innerText = data.web;
     document.getElementById('btn-loc').innerText = data.loc;
     document.getElementById('btn-review').innerText = data.review;
+    document.getElementById('btn-phone1').innerText = data.phone;
+    document.getElementById('btn-phone2').innerText = data.phone;
     document.getElementById('btn-fb').innerText = data.facebook;
     document.getElementById('btn-ig').innerText = data.instagram;
     document.getElementById('btn-tk').innerText = data.tiktok;
